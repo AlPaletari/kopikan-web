@@ -51,7 +51,7 @@
 </head>
 <body class="relative text-coffee-800 bg-cream selection:bg-coffee-200 selection:text-coffee-900">
 
-    <!-- Background Biji Kopi (Opasitas dinaikkan menjadi 15% agar lebih kentara) -->
+    <!-- Background Biji Kopi -->
     <div class="fixed inset-0 z-[-10] opacity-[0.15] pointer-events-none" style="background-image: url('https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=2000&auto=format&fit=crop'); background-size: cover; background-position: center; background-attachment: fixed;"></div>
 
     <!-- Navbar -->
@@ -70,6 +70,10 @@
                 <div class="items-center hidden space-x-8 md:flex lg:space-x-12">
                     <a href="#home" class="relative text-sm font-semibold tracking-widest uppercase transition-colors text-coffee-800 hover:text-coffee-900 group">
                         Home
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-coffee-900 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#kemitraan" class="relative text-sm font-semibold tracking-widest uppercase transition-colors text-coffee-800 hover:text-coffee-900 group">
+                        Kemitraan
                         <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-coffee-900 transition-all duration-300 group-hover:w-full"></span>
                     </a>
                     <a href="#menu" class="relative text-sm font-semibold tracking-widest uppercase transition-colors text-coffee-800 hover:text-coffee-900 group">
@@ -100,6 +104,7 @@
         <div id="mobile-menu" class="absolute hidden w-full border-t shadow-2xl md:hidden bg-cream/95 backdrop-blur-xl border-coffee-200/50">
             <div class="px-6 pt-4 pb-8 space-y-3">
                 <a href="#home" class="block px-4 py-3 text-sm font-semibold tracking-widest text-center uppercase rounded-xl text-coffee-800 hover:bg-coffee-100 mobile-link">Home</a>
+                <a href="#kemitraan" class="block px-4 py-3 text-sm font-semibold tracking-widest text-center uppercase rounded-xl text-coffee-800 hover:bg-coffee-100 mobile-link">Kemitraan</a>
                 <a href="#menu" class="block px-4 py-3 text-sm font-semibold tracking-widest text-center uppercase rounded-xl text-coffee-800 hover:bg-coffee-100 mobile-link">Menu</a>
                 <a href="https://maps.google.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-4 py-4 mt-6 text-sm font-bold tracking-widest text-white uppercase rounded-full shadow-lg bg-coffee-900 hover:bg-coffee-800 mobile-link">
                     <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 384 512">
@@ -154,20 +159,19 @@
             <!-- Menu Grid -->
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-10" id="menu-container">
                 
-                <!-- MENU BEST SELLER (Horizontal Card di Layar Besar, Gambar Terlihat Utuh) -->
+                <!-- MENU BEST SELLER -->
                 <div class="mb-4 col-span-full menu-item coffee">
                     <div class="flex flex-col md:flex-row overflow-hidden transition-all duration-300 bg-white border border-coffee-100 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.12)] hover:-translate-y-1 group">
                         
-                        <!-- Gambar Area (Menggunakan object-contain & padding agar gelas utuh) -->
                         <div class="relative flex items-center justify-center w-full p-6 md:w-2/5 h-72 md:h-96 bg-coffee-50/50">
-                            <!-- Badge -->
                             <div class="absolute z-10 px-4 py-1.5 text-xs font-bold tracking-wider text-white rounded-full top-4 left-4 bg-coffee-900 shadow-md">
                                 ⭐ BEST SELLER
                             </div>
-                            <img src="images/Signature.jpeg" alt="Signature" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-105 drop-shadow-md">
+                            <a href="https://app.grab.com/s/2bMLQGwQ" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full h-full group/img">
+                                <img src="images/Signature.jpeg" alt="Signature" class="object-contain w-full h-full transition-transform duration-700 group-hover/img:scale-105 drop-shadow-md">
+                            </a>                        
                         </div>
 
-                        <!-- Konten Teks -->
                         <div class="flex flex-col justify-center w-full p-8 text-center md:text-left md:w-3/5 md:p-10 lg:p-12">
                             <p class="mb-2 text-sm font-semibold tracking-widest uppercase text-coffee-500">Signature Series</p>
                             <h3 class="font-serif text-3xl font-bold md:text-4xl lg:text-5xl text-coffee-900">Kopikan Signature</h3>
@@ -179,10 +183,12 @@
                     </div>
                 </div>
 
-                <!-- Coffee Items Regular (Menggunakan object-contain & padding agar utuh) -->
+                <!-- Coffee Items Regular -->
                 <div class="flex flex-col overflow-hidden transition-all duration-300 bg-white border border-coffee-50 rounded-3xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.1)] hover:-translate-y-1 group menu-item coffee">
                     <div class="relative flex items-center justify-center h-64 p-4 bg-coffee-50/40">
-                        <img src="images/Americano series.jpg" alt="Americano Series" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md">
+                        <a href="https://app.grab.com/s/lyThlEMO" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full h-full group/img"> 
+                            <img src="images/Americano series.jpg" alt="Americano Series" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md"> 
+                        </a>
                     </div>
                     <div class="flex flex-col justify-between flex-grow p-6 md:p-8">
                         <div>
@@ -197,7 +203,9 @@
 
                 <div class="flex flex-col overflow-hidden transition-all duration-300 bg-white border border-coffee-50 rounded-3xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.1)] hover:-translate-y-1 group menu-item coffee">
                     <div class="relative flex items-center justify-center h-64 p-4 bg-coffee-50/40">
-                        <img src="images/Kopi butterscotch.jpeg" alt="Kopi Butterscotch" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md">
+                        <a href="https://app.grab.com/s/lyThlEMO" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full h-full group/img"> 
+                            <img src="images/Kopi butterscotch.jpeg" alt="Kopi Butterscotch" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md">
+                        </a>
                     </div>
                     <div class="flex flex-col justify-between flex-grow p-6 md:p-8">
                         <div>
@@ -212,7 +220,9 @@
 
                 <div class="flex flex-col overflow-hidden transition-all duration-300 bg-white border border-coffee-50 rounded-3xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.1)] hover:-translate-y-1 group menu-item coffee">
                     <div class="relative flex items-center justify-center h-64 p-4 bg-coffee-50/40">
-                        <img src="images/Kopi caramel.jpg" alt="Kopi Caramel" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md">
+                        <a href="https://app.grab.com/s/lyThlEMO" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full h-full group/img"> 
+                            <img src="images/Kopi caramel.jpg" alt="Kopi Caramel" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md"> 
+                        </a>
                     </div>
                     <div class="flex flex-col justify-between flex-grow p-6 md:p-8">
                         <div>
@@ -227,22 +237,9 @@
 
                 <div class="flex flex-col overflow-hidden transition-all duration-300 bg-white border border-coffee-50 rounded-3xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.1)] hover:-translate-y-1 group menu-item coffee">
                     <div class="relative flex items-center justify-center h-64 p-4 bg-coffee-50/40">
-                        <img src="images/Kopi coklat.jpeg" alt="Kopi Coklat" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md">
-                    </div>
-                    <div class="flex flex-col justify-between flex-grow p-6 md:p-8">
-                        <div>
-                            <h3 class="font-serif text-xl font-bold text-coffee-900 md:text-2xl">Kopi Coklat</h3>
-                            <p class="mt-3 text-sm leading-relaxed text-coffee-600">Kombinasi nikmat yang seimbang antara kopi pilihan dan coklat pekat.</p>
-                        </div>
-                        <div class="flex items-center justify-between pt-5 mt-6 border-t border-coffee-100/60">
-                            <p class="text-xl font-bold text-coffee-900">Rp 13.000</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col overflow-hidden transition-all duration-300 bg-white border border-coffee-50 rounded-3xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.1)] hover:-translate-y-1 group menu-item coffee">
-                    <div class="relative flex items-center justify-center h-64 p-4 bg-coffee-50/40">
-                        <img src="images/Kopi creamy.jpeg" alt="Kopi Creamy" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md">
+                        <a href="https://app.grab.com/s/lyThlEMO" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full h-full group/img"> 
+                            <img src="images/Kopi creamy.jpeg" alt="Kopi Creamy" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md">
+                        </a>
                     </div>
                     <div class="flex flex-col justify-between flex-grow p-6 md:p-8">
                         <div>
@@ -257,7 +254,9 @@
 
                 <div class="flex flex-col overflow-hidden transition-all duration-300 bg-white border border-coffee-50 rounded-3xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.1)] hover:-translate-y-1 group menu-item coffee">
                     <div class="relative flex items-center justify-center h-64 p-4 bg-coffee-50/40">
-                        <img src="images/Kopi pandan.jpg" alt="Kopi Pandan" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md">
+                        <a href="https://app.grab.com/s/lyThlEMO" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full h-full group/img"> 
+                            <img src="images/Kopi pandan.jpg" alt="Kopi Pandan" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md"> 
+                        </a>
                     </div>
                     <div class="flex flex-col justify-between flex-grow p-6 md:p-8">
                         <div>
@@ -272,23 +271,61 @@
 
                 <div class="flex flex-col overflow-hidden transition-all duration-300 bg-white border border-coffee-50 rounded-3xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.1)] hover:-translate-y-1 group menu-item coffee">
                     <div class="relative flex items-center justify-center h-64 p-4 bg-coffee-50/40">
-                        <img src="images/Kopi susu.jpg" alt="Kopi Susu" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md">
+                        <a href="https://app.grab.com/s/lyThlEMO" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full h-full group/img"> 
+                            <img src="images/Kopi susu.jpg" alt="Kopi Susu" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md"> 
+                        </a>
                     </div>
                     <div class="flex flex-col justify-between flex-grow p-6 md:p-8">
                         <div>
                             <h3 class="font-serif text-xl font-bold text-coffee-900 md:text-2xl">Kopi Susu</h3>
-                            <p class="mt-3 text-sm leading-relaxed text-coffee-600">Kopi susu signature andalan Kopikan, racikan pas untuk sehari-hari.</p>
+                            <p class="mt-3 text-sm leading-relaxed text-coffee-600">Kopi susu andalan Kopikan, racikan pas untuk sehari-hari.</p>
                         </div>
                         <div class="flex items-center justify-between pt-5 mt-6 border-t border-coffee-100/60">
                             <p class="text-xl font-bold text-coffee-900">Rp 13.000</p>
                         </div>
                     </div>
                 </div>
-
+                
+                <div class="flex flex-col overflow-hidden transition-all duration-300 bg-white border border-coffee-50 rounded-3xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.1)] hover:-translate-y-1 group menu-item coffee">
+                    <div class="relative flex items-center justify-center h-64 p-4 bg-coffee-50/40">
+                        <a href="https://app.grab.com/s/lyThlEMO" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full h-full group/img"> 
+                            <img src="images/Kopi Susu Panas.jpeg" alt="Kopi Susu Panas" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md"> 
+                        </a>
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow p-6 md:p-8">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-coffee-900 md:text-2xl">Kopi Susu Panas</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-coffee-600">Kenikmatan kopi susu klasik disajikan panas, cocok dinikmati saat bersantai.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-5 mt-6 border-t border-coffee-100/60">
+                            <p class="text-xl font-bold text-coffee-900">Rp 13.000</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col overflow-hidden transition-all duration-300 bg-white border border-coffee-50 rounded-3xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.1)] hover:-translate-y-1 group menu-item coffee">
+                    <div class="relative flex items-center justify-center h-64 p-4 bg-coffee-50/40">
+                        <a href="https://app.grab.com/s/lyThlEMO" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full h-full group/img"> 
+                            <img src="images/Americano Hot.jpeg" alt="Kopi Susu Panas" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md"> 
+                        </a>
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow p-6 md:p-8">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-coffee-900 md:text-2xl">Americano Hot</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-coffee-600">Kopi Americano panas dengan aroma kaya dan rasa yang menyegarkan.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-5 mt-6 border-t border-coffee-100/60">
+                            <p class="text-xl font-bold text-coffee-900">Rp 13.000</p>
+                        </div>
+                    </div>
+                </div>
+                
                 <!-- Non Coffee Items -->
                 <div class="flex flex-col overflow-hidden transition-all duration-300 bg-white border border-coffee-50 rounded-3xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.1)] hover:-translate-y-1 group menu-item non-coffee">
                     <div class="relative flex items-center justify-center h-64 p-4 bg-coffee-50/40">
-                        <img src="images/Coklat.jpeg" alt="Coklat" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md">
+                        <a href="https://app.grab.com/s/lyThlEMO" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full h-full group/img"> 
+                            <img src="images/Coklat.jpeg" alt="Coklat" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md"> 
+                        </a>
                     </div>
                     <div class="flex flex-col justify-between flex-grow p-6 md:p-8">
                         <div>
@@ -303,7 +340,9 @@
 
                 <div class="flex flex-col overflow-hidden transition-all duration-300 bg-white border border-coffee-50 rounded-3xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.1)] hover:-translate-y-1 group menu-item non-coffee">
                     <div class="relative flex items-center justify-center h-64 p-4 bg-coffee-50/40">
-                        <img src="images/Lemontea.jpeg" alt="Lemon Tea" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md">
+                        <a href="https://app.grab.com/s/lyThlEMO" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full h-full group/img"> 
+                            <img src="images/Lemontea.jpeg" alt="Lemon Tea" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md"> 
+                        </a>
                     </div>
                     <div class="flex flex-col justify-between flex-grow p-6 md:p-8">
                         <div>
@@ -318,7 +357,9 @@
 
                 <div class="flex flex-col overflow-hidden transition-all duration-300 bg-white border border-coffee-50 rounded-3xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(74,43,35,0.1)] hover:-translate-y-1 group menu-item non-coffee">
                     <div class="relative flex items-center justify-center h-64 p-4 bg-coffee-50/40">
-                        <img src="images/Matcha.jpeg" alt="Matcha" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md">
+                        <a href="https://app.grab.com/s/lyThlEMO" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full h-full group/img"> 
+                            <img src="images/Matcha.jpeg" alt="Matcha" class="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110 drop-shadow-md"> 
+                        </a>
                     </div>
                     <div class="flex flex-col justify-between flex-grow p-6 md:p-8">
                         <div>
@@ -335,8 +376,60 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="relative z-10 pt-16 pb-10 border-t md:pt-20 bg-coffee-900 border-coffee-800">
+    <!-- Kemitraan Section (Warna Terang) -->
+    <section id="kemitraan" class="relative py-16 border-t md:py-24 bg-coffee-50 border-coffee-200">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center justify-between gap-12 lg:flex-row">
+                
+                <!-- Teks & Penjelasan -->
+                <div class="w-full text-center lg:w-1/2 lg:text-left">
+                    <p class="mb-3 text-sm font-bold tracking-widest uppercase text-coffee-500">Peluang Bisnis</p>
+                    <h2 class="font-serif text-4xl font-bold text-coffee-900 md:text-5xl">Miliki Bisnis Kopi Anda Sendiri</h2>
+                    <p class="mt-6 text-base leading-relaxed md:text-lg text-coffee-600">
+                        Kopikan Coffe membuka peluang kemitraan dengan sistem <strong>Auto-Pilot</strong>. Anda cukup berinvestasi, tim manajemen kami yang akan mengurus operasional, rekrutmen, hingga laporan keuangan. 
+                    </p>
+                    <ul class="mt-6 space-y-3 text-left text-coffee-700">
+                        <li class="flex items-center">
+                            <span class="mr-3 text-xl">✨</span> ROI Cepat dengan pembagian awal 70:30
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3 text-xl">✨</span> Desain booth premium (Black & Gold)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3 text-xl">✨</span> Kualitas bahan baku terjamin & konsisten
+                        </li>
+                    </ul>
+                    
+                    <div class="flex flex-col gap-4 mt-10 sm:flex-row sm:justify-center lg:justify-start">
+                        <!-- Tombol Download (Gelap) -->
+                        <a href="Proposal_Kemitraan_Kopikan.pdf" download class="inline-flex items-center justify-center px-8 py-4 text-sm font-bold tracking-widest text-white uppercase transition-all duration-300 rounded-full bg-coffee-900 hover:bg-coffee-800 hover:-translate-y-1 hover:shadow-lg">
+                            Download Proposal
+                        </a>
+                        
+                        <!-- Tombol WhatsApp (Outline) -->
+                        <a href="https://wa.me/6285810119462?text=Halo%20Admin%20Kopikan,%20saya%20tertarik%20dengan%20informasi%20Franchise/Kemitraan." target="_blank" class="inline-flex items-center justify-center px-8 py-4 text-sm font-bold tracking-widest uppercase transition-all duration-300 border-2 rounded-full text-coffee-900 border-coffee-900 hover:bg-coffee-900 hover:text-white hover:-translate-y-1">
+                            Tanya via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Gambar Prototype Booth -->
+                <div class="w-full lg:w-1/2">
+                    <div class="relative p-3 bg-white rounded-3xl border border-coffee-100 shadow-[0_8px_30px_rgb(74,43,35,0.08)]">
+                        <img src="images/booth-kemitraan.jpeg" alt="Prototype Booth Kopikan" class="object-cover w-full rounded-2xl h-[400px]">
+                        
+                        <div class="absolute z-10 px-6 py-3 font-bold text-white rounded-full shadow-xl bottom-6 left-6 bg-coffee-900">
+                            Estimasi Investasi <br> Rp 85.958.000
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Warna Gelap) -->
+    <footer class="relative z-10 pt-16 pb-10 border-t-4 md:pt-20 bg-coffee-900 border-coffee-800">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 gap-10 mb-12 text-center md:gap-12 md:mb-16 md:grid-cols-3 md:text-left">
                 
